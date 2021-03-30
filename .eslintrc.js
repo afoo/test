@@ -8,18 +8,5 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 		project: ["./tsconfig.json", "./tsconfig.eslint.json"],
 	},
-	extends: [require.resolve("@ng42/typescript/.eslintrc.js")],
-	rules: {
-		quotes: [
-			"error",
-			"double",
-		],
-		semi: [
-			"error",
-			"always",
-		],
-		"@typescript-eslint/no-explicit-any": [
-			"off",
-		],
-	},
+	extends: [require.resolve("./.eslintrc-base.js")],
 };
